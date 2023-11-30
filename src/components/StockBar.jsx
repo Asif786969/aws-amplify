@@ -7,7 +7,7 @@ import Sortsvg from "./SvgComponent";
 const BarElement = styled.div`
 
   display:grid;
-  grid-template-columns:2fr 3fr 3fr 3fr 2fr;  
+  grid-template-columns:2fr 3fr 2fr 2fr 2fr 2fr 2fr;  
   
   border-style:solid;
   border-width:0.3rem;
@@ -24,7 +24,7 @@ const ItemContainer = styled.div`
 
 `;
 //{fontSize:"1.5rem",marginLeft:"-8rem"}
-const StockBar=({sortStocksbyprice,sortStocksbyvolume,sortStocksbychange})=>{
+const StockBar=({sortStocksbyprice,sortStocksbyvolume,sortStocksbychange,sortstockbyrsi})=>{
 
    
 
@@ -44,14 +44,21 @@ const StockBar=({sortStocksbyprice,sortStocksbyvolume,sortStocksbychange})=>{
             
 
         </ItemContainer>
-        
+
+        <ItemContainer>
+            <h2>RSI</h2>
+            <p onClick={sortstockbyrsi}><Sortsvg/></p>
+            
+
+        </ItemContainer>
+        <ItemContainer><h2>HA</h2></ItemContainer>
         <ItemContainer>
             <h2>Volume</h2>
             <p onClick={sortStocksbyvolume}><Sortsvg/></p>
         </ItemContainer>
         <ItemContainer>
 
-        <h2>TradingView</h2>
+        <h2>TV</h2>
         </ItemContainer>
         
         

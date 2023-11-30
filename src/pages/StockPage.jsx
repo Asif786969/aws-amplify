@@ -16,136 +16,117 @@ const StockPage = () => {
     const [sortstocksbyprice,setSortStocksPrice]=useState(false);
     const [sortstockbyvolume,setSortStockVolume]=useState(false);
     const [sortstockbychange,setSortStockChange]=useState(false);
+    const [sortstockbyrsi,setSortStockRsi]=useState(false);
     
 
 
 
-    const fetchData = async (symbol) => {
-        
-        
-
+    const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:9131/symbol', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'text/plain',
-                },
-                body: symbol,
+            const response = await fetch("/allstocks");
+            const data = await response.json();
+            
+            
+            const responsersi = await fetch("/allrsi");
+            const dataRsi = await responsersi.json();
+            
+            
+            const responseha = await fetch("/allha");
+            const dataHa = await responseha.json();
+            
+            
+            const tempdata=data.map((item,index)=>{
+                    return {
+                        stockName:item['stockName'],
+                        stockSymbol:item['stockSymbol'],
+                        stockPrice:item['stockPrice'],
+                        stockChange:100*(item['stockPrice']-item['stockOld'])/item['stockOld'],
+                        volume:(item['volume']),
+                        rsi:dataRsi[index],
+                        ha:dataHa[index]
+                    };
             });
+            return tempdata;
+        
 
-            if (response.ok) {
-                const latestData = await response.json();
-                const dailyChange = (((latestData[1] - latestData[2]) / latestData[2]) * 100).toFixed(2);
-                
-               
-                return [parseFloat(latestData[1]).toFixed(2),dailyChange,latestData[3]];
-            }
         } catch (error) {
-            console.log(error);
+            console.error('Error fetching data:', error);
         }
     };
+    
 
-    useEffect(() => {
-        try {
-            fetch('http://localhost:3000/stocks')
-            .then(res => res.json())
-            .then(data => {
-                setStocks(data);
-            });
-        } catch (error) {
-            console.log(error+" happened in jsonserver")
-        }
-        
-
-        //fetchData("AMBUJACEM.NS");
-    }, []);
+    
 
 
-        const updateStocksData = async () => {
-            const updatedStocks = await Promise.all(stocks.map(async (stock) => {
-                const list=await fetchData(stock.Symbol + (stock.Exchange === 'NSE' ? '.NS' : '.BO'));
-                const price = list[0];
-                const index=stock.Symbol+(stock.Exchange === 'NSE' ? '.NS' : '.BO');
-                const change=list[1];
-                const volume=list[2];
-                
-                return {
-                    name: stock.Name,
-                    price: price || 0,
-                    index:index,
-                    change:change,
-                    volume:volume,
-                    
-                };
-            }));
-            setNewStocks(updatedStocks);
+       const updatedStocksData=async ()=>{
+            const data=await fetchData();
+            //console.log(data);
+            setNewStocks(data);
+           
+       }
 
-            
-        
-        };
 
         useEffect(()=>{
-            updateStocksData();
+            updatedStocksData();
         },[stocks])
 
-        
-    
-
-    
     
 
     const sortStocksByPrice=()=>{
         const sortedStocks=[...newStocks]
-        sortedStocks.sort((a,b)=>a.price-b.price);
+        sortedStocks.sort((a,b)=>a.stockPrice-b.stockPrice);
         setNewStocks(sortedStocks);
         setSortStocksPrice(true);
         setSortStockVolume(false);
         setSortStockChange(false);
+        setSortStockRsi(false);
     }
 
     const sortStockByVolume=()=>{
         const sortedStocks=[...newStocks]
-        sortedStocks.sort((a,b)=>a.volume*a.price-b.volume*b.price);
+        sortedStocks.sort((a,b)=>a.volume*a.stockPrice-b.volume*b.stockPrice);
         setNewStocks(sortedStocks);
         setSortStockVolume(true);
         setSortStockChange(false);
         setSortStocksPrice(false);
+        setSortStockRsi(false);
     }
 
     const sortStockByChange=()=>{
         const sortedStocks=[...newStocks];
-        sortedStocks.sort((a,b)=>a.change-b.change);
+        sortedStocks.sort((a,b)=>a.stockChange-b.stockChange);
         setNewStocks(sortedStocks);
         setSortStockChange(true);
         setSortStocksPrice(false);
         setSortStockVolume(false);
-   
-    
-        
-        
+        setSortStockRsi(false);
     }
 
+    const sortRsiByChange=()=>{
+        const sortedStocks=[...newStocks];
+        sortedStocks.sort((a,b)=>a.rsi-b.rsi);
+        setNewStocks(sortedStocks);
+        setSortStockChange(false);
+        setSortStocksPrice(false);
+        setSortStockVolume(false);
+        setSortStockRsi(true);
+    }
     
 
     const handleClickRefresh = async () => {
-        
-    
         const refreshCaller = async () => {
             
             try {
-                const response = await fetch("http://localhost:9131/refresh");
+                const response = await fetch("/refresh");
                 
                 console.log("refresh success");
-                updateStocksData();
+                updatedStocksData();
                 console.log("updated")
             } catch (error) {
                 console.log(error + "error in refresh button");
             }
         };
-
         refreshCaller();
-    
-        
         
     };
     
@@ -153,19 +134,21 @@ const StockPage = () => {
     return (
         <div>
             <h1 className="heading">Stocks</h1>
-            <StockBar sortStocksbyprice={sortStocksByPrice} sortStocksbyvolume={sortStockByVolume} sortStocksbychange={sortStockByChange}/>
+            <StockBar sortStocksbyprice={sortStocksByPrice} sortStocksbyvolume={sortStockByVolume} sortStocksbychange={sortStockByChange} sortstockbyrsi={sortRsiByChange}/>
             <button onClick={handleClickRefresh}>Refresh</button>
            
             
 
             {  newStocks.map((ele) => (
                 <StockComponent
-                    key={ele.name}
-                    name={ele.name}
-                    price={ele.price}
-                    change={ele.change}
+                    key={ele.stockName}
+                    name={ele.stockName}
+                    price={ele.stockPrice}
+                    change={ele.stockChange}
                     symbol={ele.index}
                     volume={ele.volume}
+                    rsi={ele.rsi}
+                    ha={ele.ha}
                 />
             ))}
             

@@ -1,0 +1,59 @@
+GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/alarms
+
+HTTP/1.1 200  - OK
+date: Wed, 29 Nov 2023 15:43:23 GMT
+content-type: application/json
+content-length: 51
+connection: close
+x-amzn-requestid: 965e48d9-5da8-437a-a2c0-cc3d3d9e178d
+x-amz-apigw-id: PKtUMGHFoAMEN0Q=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-65675c1a-448d33ef0cf5cf7d4cd5c380;Sampled=0;lineage=ed58f588:0
+###
+GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/highbuy
+
+HTTP/1.1 200  - OK
+date: Wed, 29 Nov 2023 15:55:25 GMT
+content-type: application/json
+content-length: 51
+connection: close
+x-amzn-requestid: 12bcb956-2dcb-432e-bd59-4d32faaca3af
+x-amz-apigw-id: PKvCtEjKIAMEVRA=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-65675edd-43afc0eb626c88d0160405c1;Sampled=0;lineage=ed58f588:0
+###
+GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allrsi
+
+HTTP/1.1 200  - OK
+date: Thu, 30 Nov 2023 06:11:13 GMT
+content-type: application/json
+content-length: 2376
+connection: close
+x-amzn-requestid: c8533ef5-33bd-4241-b5ac-510564b60888
+x-amz-apigw-id: PMscBHploAMEZRw=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-6568277f-48531d5d247f5c675557636c;Sampled=0;lineage=ed58f588:0
+###
+GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allha
+
+HTTP/1.1 200  - OK
+date: Thu, 30 Nov 2023 06:11:18 GMT
+content-type: application/json
+content-length: 685
+connection: close
+x-amzn-requestid: bc3ed5dc-ec37-49a1-bfda-0a56244e8ee8
+x-amz-apigw-id: PMsc3GSooAMEEdw=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-65682785-5f8a2e284e6946301367b1e0;Sampled=0;lineage=ed58f588:0
+###
+GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/allstocks
+
+HTTP/1.1 200  - OK
+date: Thu, 30 Nov 2023 06:11:41 GMT
+content-type: application/json
+content-length: 18525
+connection: close
+x-amzn-requestid: 8b1becaa-1b06-43d8-9bfa-be608e717703
+x-amz-apigw-id: PMsgsGTpIAMEXWw=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-6568279d-53d2f3fb4df30e1049370e04;Sampled=0;lineage=5537306b:0
