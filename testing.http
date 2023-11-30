@@ -13,14 +13,14 @@ x-amzn-trace-id: Root=1-65675c1a-448d33ef0cf5cf7d4cd5c380;Sampled=0;lineage=ed58
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/highbuy
 
 HTTP/1.1 200  - OK
-date: Wed, 29 Nov 2023 15:55:25 GMT
+date: Thu, 30 Nov 2023 18:03:05 GMT
 content-type: application/json
 content-length: 51
 connection: close
-x-amzn-requestid: 12bcb956-2dcb-432e-bd59-4d32faaca3af
-x-amz-apigw-id: PKvCtEjKIAMEVRA=
+x-amzn-requestid: 59256339-d12b-4d5a-958d-e59e04b85479
+x-amz-apigw-id: POUrsGVloAMEVsg=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-65675edd-43afc0eb626c88d0160405c1;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-6568ce4a-5aaaf752548a6c65730f49a4;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allrsi
 

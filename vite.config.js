@@ -8,7 +8,6 @@ export default defineConfig({
     proxy:{
       '/alarms':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
       '/refresh':'https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing',
-      '/stocks':'http://localhost:3000',
       '/allstocks':'https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing',
       '/highbuy':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
       '/crossrsi':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
