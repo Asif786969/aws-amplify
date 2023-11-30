@@ -41,30 +41,7 @@ const Explore = () => {
 
 
     },[]);
-    const fetchindex= async (bodydata,setData,setDailychng)=>{
-        try {
-            const response = await fetch('http://localhost:9131/updatestocklive', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'text/plain',
-              },
-              body: bodydata,
-            });
-      
-            if (response.ok) {
-              const data = await response.json();
-              const dailychange=(((data[1]-data[2])*100)/data[1]).toFixed(2);
-
-              //console.log(dailychange);
-             
-              setData(parseInt(data[1],10).toFixed(2));
-              setDailychng(dailychange);
-            } else {
-              throw new Error('Failed to fetch nifty50 data');
-            }
-          } catch (error) {
-            console.log(error);
-          }
+    
 }
 
 
@@ -93,6 +70,6 @@ const Explore = () => {
             
         </div>
      );
-}
+
  
 export default Explore;

@@ -22,6 +22,18 @@ x-amz-apigw-id: POUrsGVloAMEVsg=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 x-amzn-trace-id: Root=1-6568ce4a-5aaaf752548a6c65730f49a4;Sampled=0;lineage=ed58f588:0
 ###
+GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/updatestocklive
+
+HTTP/1.1 404  - Not Found
+date: Thu, 30 Nov 2023 18:22:51 GMT
+content-type: application/json
+content-length: 0
+connection: close
+x-amzn-requestid: 48a13f6e-5f7c-4e2e-bcd0-abed54925b79
+x-amz-apigw-id: POXmQHeQoAMEp9Q=
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+x-amzn-trace-id: Root=1-6568d2f4-287250487c2807b7052a1bb6;Sampled=0;lineage=5537306b:0
+###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allrsi
 
 HTTP/1.1 200  - OK

@@ -12,7 +12,8 @@ export default defineConfig({
       '/highbuy':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
       '/crossrsi':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
       '/allrsi':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
-      '/allha':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing'
+      '/allha':'https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing',
+     
       
 
       
