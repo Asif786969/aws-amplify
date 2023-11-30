@@ -61,11 +61,11 @@ x-amzn-trace-id: Root=1-65682785-5f8a2e284e6946301367b1e0;Sampled=0;lineage=ed58
 GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/allstocks
 
 HTTP/1.1 200  - OK
-date: Thu, 30 Nov 2023 06:11:41 GMT
+date: Thu, 30 Nov 2023 18:29:49 GMT
 content-type: application/json
-content-length: 18525
+content-length: 18607
 connection: close
-x-amzn-requestid: 8b1becaa-1b06-43d8-9bfa-be608e717703
-x-amz-apigw-id: PMsgsGTpIAMEXWw=
+x-amzn-requestid: f4679a0f-8a3d-43cd-82c9-d61a631a4dc6
+x-amz-apigw-id: POYnTHssIAMED0A=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6568279d-53d2f3fb4df30e1049370e04;Sampled=0;lineage=5537306b:0
+x-amzn-trace-id: Root=1-6568d494-3a5524545dbad7c54a6f2530;Sampled=0;lineage=5537306b:0
