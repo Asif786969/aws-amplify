@@ -145,7 +145,7 @@ const StockPage = () => {
                     name={ele.stockName}
                     price={ele.stockPrice}
                     change={ele.stockChange}
-                    symbol={ele.index}
+                    symbol={ele.stockSymbol}
                     volume={ele.volume}
                     rsi={ele.rsi}
                     ha={ele.ha}
