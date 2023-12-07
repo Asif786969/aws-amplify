@@ -12,22 +12,19 @@ x-amzn-requestid: 4594296d-cb1d-445a-88dd-be1e4687c2b3
 x-amz-apigw-id: PdnA6E_AoAMEa9g=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 x-amzn-trace-id: Root=1-656eeb9f-33de18044375939619fd04c3;Sampled=0;lineage=ed58f588:0
-/*
-100 DAY UPDATES 
-*/
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/updateallstock
 
 HTTP/1.1 200  - OK
-date: Tue, 05 Dec 2023 10:03:33 GMT
+date: Thu, 07 Dec 2023 09:23:02 GMT
 content-type: text/plain; charset=UTF-8
 content-length: 43
 connection: close
-x-amzn-requestid: 0539c2ea-80dd-43a5-867b-16ba954092bf
+x-amzn-requestid: 926c99d8-f2c0-40c4-9e71-74c36d1002aa
 x-amzn-remapped-content-length: 43
-x-amz-apigw-id: PdtIwFBZoAMEFQQ=
+x-amz-apigw-id: PkNE7G9ZoAMEEiQ=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-656ef56a-5b8690dd4c62828c4a8bb07f;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-65718eec-5ed712c935b0f003081635a8;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/highbuy
 
@@ -76,9 +73,6 @@ x-amzn-requestid: 0691c6bf-1630-4168-926c-73900d9ac95a
 x-amz-apigw-id: PdenpGEBoAMENxA=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 x-amzn-trace-id: Root=1-656ede30-048d623f7efc07150e6eec72;Sampled=0;lineage=ed58f588:0
-/*
-ALL STOCKS APIS
-*/
 ###
 GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/allstocks
 
@@ -91,18 +85,24 @@ x-amzn-requestid: 785c5ad8-00a1-488d-9817-4cc42ca80907
 x-amz-apigw-id: PQjujGHwIAMEkbA=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 x-amzn-trace-id: Root=1-6569b329-4a1f92551a37d61465f9a638;Sampled=0;lineage=5537306b:0
-/*
-
-*/
 ###
 GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/refresh
 
 HTTP/1.1 200  - OK
-date: Tue, 05 Dec 2023 08:24:46 GMT
+date: Wed, 06 Dec 2023 19:16:29 GMT
 content-type: application/json
-content-length: 18522
+content-length: 10
 connection: close
-x-amzn-requestid: 53cc3987-3147-4341-9e9a-7e026e4c33a1
-x-amz-apigw-id: PderBFrfoAMECZA=
+x-amzn-requestid: 4993f327-69e8-4a90-ac03-ff7d44fe5cef
+x-amz-apigw-id: PiRDpGW6oAMEIqQ=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-656ede46-3057c3fb5d1eb67a6162e6bb;Sampled=0;lineage=5537306b:0
+x-amzn-trace-id: Root=1-6570c87d-46df1bfd391f122f639ce2bd;Sampled=0;lineage=5537306b:0
+###
+GET https://75pvdklpi4.execute-api.us-east-1.amazonaws.com/default/firstpython
+
+HTTP/1.1 200  - OK
+date: Thu, 07 Dec 2023 09:36:18 GMT
+content-type: text/plain; charset=utf-8
+content-length: 20
+connection: close
+apigw-requestid: PkPCOgb1oAMEJ2A=

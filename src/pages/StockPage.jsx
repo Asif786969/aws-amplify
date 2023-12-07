@@ -118,15 +118,24 @@ const StockPage = () => {
             
             try {
                 const response = await fetch("/refresh");
-                
-                console.log("refresh success");
+                const time=await response.json()
+                console.log(time);
                 updatedStocksData();
                 console.log("updated")
             } catch (error) {
                 console.log(error + "error in refresh button");
             }
         };
-        refreshCaller();
+        const interval=setInterval(()=>{
+            const date=(Math.floor(Date.now()/1000)+19800)*1000;
+            const hours=new Date(date).getUTCHours();
+            if (hours>=9 && hours<=15){
+                refreshCaller();
+
+            } 
+            else{ console.log("Market Closed "+hours)};
+        },1000*5*100);
+        return ()=>clearInterval(interval);
         
     };
     
