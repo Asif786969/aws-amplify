@@ -126,7 +126,7 @@ const StockPage = () => {
                 console.log(error + "error in refresh button");
             }
         };
-	    refreshCalller();
+	    refreshCaller();
 	    console.log("Called first time");
         const interval=setInterval(()=>{
             const date=(Math.floor(Date.now()/1000)+19800)*1000;
