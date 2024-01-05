@@ -4,105 +4,105 @@ ALL ALARMS
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/alarms
 
 HTTP/1.1 200  - OK
-date: Tue, 05 Dec 2023 09:21:36 GMT
+date: Thu, 07 Dec 2023 18:49:45 GMT
 content-type: application/json
-content-length: 50
+content-length: 51
 connection: close
-x-amzn-requestid: 4594296d-cb1d-445a-88dd-be1e4687c2b3
-x-amz-apigw-id: PdnA6E_AoAMEa9g=
+x-amzn-requestid: 01881fcf-0f45-4c92-a756-6ed1e6e641fa
+x-amz-apigw-id: PlgGsHC5IAMEZhg=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-656eeb9f-33de18044375939619fd04c3;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-657213c4-16704d420214bc287ae94dce;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/updateallstock
 
 HTTP/1.1 200  - OK
-date: Thu, 07 Dec 2023 09:23:02 GMT
+date: Thu, 07 Dec 2023 18:50:09 GMT
 content-type: text/plain; charset=UTF-8
 content-length: 43
 connection: close
-x-amzn-requestid: 926c99d8-f2c0-40c4-9e71-74c36d1002aa
+x-amzn-requestid: a2f9e360-b946-4bb6-aecd-3c1cd1fdb2ea
 x-amzn-remapped-content-length: 43
-x-amz-apigw-id: PkNE7G9ZoAMEEiQ=
+x-amz-apigw-id: PlgJ2E2UIAMEjcQ=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-65718eec-5ed712c935b0f003081635a8;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-657213d8-67ea0c1341da3e6f03d78cb9;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/highbuy
 
 HTTP/1.1 200  - OK
-date: Fri, 01 Dec 2023 10:45:40 GMT
+date: Thu, 07 Dec 2023 18:50:33 GMT
 content-type: application/json
-content-length: 934
+content-length: 691
 connection: close
-x-amzn-requestid: 7a9777b6-19ae-404d-95fe-1e7f8e42e33f
-x-amz-apigw-id: PQnkeGI-oAMEcNg=
+x-amzn-requestid: 3e4b6aae-3e1a-4b11-9797-1b9907f5a2ab
+x-amz-apigw-id: PlgOQHlboAMEo1Q=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6569b94f-1ca2c71f5525ca2f13e6651b;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-657213f4-0dd9b80b1f92d2bf0d1abb1e;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allrsi
 
-HTTP/1.1 404  - Not Found
-date: Fri, 01 Dec 2023 10:46:00 GMT
+HTTP/1.1 200  - OK
+date: Thu, 07 Dec 2023 18:50:41 GMT
 content-type: application/json
-content-length: 0
+content-length: 2369
 connection: close
-x-amzn-requestid: a64d71f7-d398-4726-98dd-9faa265b6bc8
-x-amz-apigw-id: PQnnRGHPIAMErXQ=
+x-amzn-requestid: da5f113e-ad39-48d8-87fb-c45ce14eb86d
+x-amz-apigw-id: PlgQGFaYIAMEVoQ=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6569b961-1ce41ad77d002e617e590454;Sampled=0;lineage=5537306b:0
+x-amzn-trace-id: Root=1-65721400-70060f354d0fb88701bc9e98;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/crossrsi
 
 HTTP/1.1 200  - OK
-date: Fri, 01 Dec 2023 10:46:08 GMT
+date: Thu, 07 Dec 2023 18:50:48 GMT
 content-type: application/json
-content-length: 2380
+content-length: 499
 connection: close
-x-amzn-requestid: 73611797-6314-4739-a0a4-375507b9c18b
-x-amz-apigw-id: PQnpdEHtoAMEFKA=
+x-amzn-requestid: 197243fc-bd6a-4f83-a30c-f68314d01a1e
+x-amz-apigw-id: PlgRLF-kIAMEf9A=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6569b96f-05e039b72a773be978103eab;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-65721407-38f27ff37400ea706819fc8c;Sampled=0;lineage=ed58f588:0
 ###
 GET https://l9enkvivp3.execute-api.us-east-1.amazonaws.com/testing/allha
 
 HTTP/1.1 200  - OK
-date: Tue, 05 Dec 2023 08:24:18 GMT
+date: Thu, 07 Dec 2023 18:50:55 GMT
 content-type: application/json
-content-length: 303
+content-length: 705
 connection: close
-x-amzn-requestid: 0691c6bf-1630-4168-926c-73900d9ac95a
-x-amz-apigw-id: PdenpGEBoAMENxA=
+x-amzn-requestid: 38c14be0-5018-40ff-94df-aa511f3491e4
+x-amz-apigw-id: PlgSOHdqIAMEqmw=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-656ede30-048d623f7efc07150e6eec72;Sampled=0;lineage=ed58f588:0
+x-amzn-trace-id: Root=1-6572140d-0918722816af05f14c739b4f;Sampled=0;lineage=ed58f588:0
 ###
 GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/allstocks
 
 HTTP/1.1 200  - OK
-date: Fri, 01 Dec 2023 10:19:21 GMT
+date: Thu, 07 Dec 2023 18:48:23 GMT
 content-type: application/json
-content-length: 18576
+content-length: 18611
 connection: close
-x-amzn-requestid: 785c5ad8-00a1-488d-9817-4cc42ca80907
-x-amz-apigw-id: PQjujGHwIAMEkbA=
+x-amzn-requestid: 62ad04e0-8d87-458a-ab3a-7d7557eccc4b
+x-amz-apigw-id: Plf6rEvwoAMEj1g=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6569b329-4a1f92551a37d61465f9a638;Sampled=0;lineage=5537306b:0
+x-amzn-trace-id: Root=1-65721377-4fdeec0d51cf9ace1bd6a2d1;Sampled=0;lineage=5537306b:0
 ###
 GET https://khfdw071s5.execute-api.us-east-1.amazonaws.com/testing/refresh
 
 HTTP/1.1 200  - OK
-date: Wed, 06 Dec 2023 19:16:29 GMT
+date: Thu, 07 Dec 2023 18:48:20 GMT
 content-type: application/json
 content-length: 10
 connection: close
-x-amzn-requestid: 4993f327-69e8-4a90-ac03-ff7d44fe5cef
-x-amz-apigw-id: PiRDpGW6oAMEIqQ=
+x-amzn-requestid: b48060c3-de1c-4d41-bf31-5ceadfa33830
+x-amz-apigw-id: Plf37GQ5IAMEkEA=
 vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-x-amzn-trace-id: Root=1-6570c87d-46df1bfd391f122f639ce2bd;Sampled=0;lineage=5537306b:0
+x-amzn-trace-id: Root=1-65721365-72939558684e7c5136143a4d;Sampled=0;lineage=5537306b:0
 ###
 GET https://75pvdklpi4.execute-api.us-east-1.amazonaws.com/default/firstpython
 
 HTTP/1.1 200  - OK
-date: Thu, 07 Dec 2023 09:36:18 GMT
+date: Thu, 07 Dec 2023 19:28:53 GMT
 content-type: text/plain; charset=utf-8
 content-length: 20
 connection: close
-apigw-requestid: PkPCOgb1oAMEJ2A=
+apigw-requestid: Pll1wjCOIAMEMMA=
